@@ -102,17 +102,19 @@ function showScore(){
     nextButton.style.display = "block";
 
     // Go to another page
-    let redirectButton = document.createElement("button");
-    redirectButton.innerHTML = "Click this!";
-    redirectButton.classList.add("redirect-btn");
-    redirectButton.style.display = "inline-block";
-    redirectButton.style.marginTop = "10px";
+    if (score === questions.length) {
+        let redirectButton = document.createElement("button");
+        redirectButton.innerHTML = "Click this!";
+        redirectButton.classList.add("redirect-btn");
+        redirectButton.style.display = "inline-block";
+        redirectButton.style.marginTop = "10px";
 
-    nextButton.parentNode.appendChild(redirectButton);
+        nextButton.parentNode.appendChild(redirectButton);
 
-    redirectButton.addEventListener("click", () => {
-        window.location.href = 'https://jasonthree.github.io/';
-    });
+        redirectButton.addEventListener("click", () => {
+            window.location.href = 'https://jasonthree.github.io/';
+        });
+    }
 }
 
 function handleNextButton(){
