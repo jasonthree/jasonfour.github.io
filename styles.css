@@ -16,6 +16,10 @@ div {
 }
 body {
     background-image: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
 }
 .test{
     background-color: rgb(175, 225, 175); 
