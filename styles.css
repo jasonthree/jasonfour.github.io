@@ -15,7 +15,7 @@ div {
     text-align: center;
 }
 body {
-    background-image: url(background.jpg);
+    background-image: url("background.jpg");
 }
 .test{
     background-color: rgb(175, 225, 175); 
